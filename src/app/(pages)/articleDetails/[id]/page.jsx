@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitch, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import moment from 'moment';
 import Image from 'next/image';
+import { marked} from 'marked';
 // // Function to fetch a single blog by ID from Strapi
 async function fetchBlogById(blogId) {
   const res = await fetch(`https://strapi-blog-demo-yuir.onrender.com/api/blogs/${blogId}?populate=*`, {
@@ -24,6 +25,7 @@ async function Page({params}) {
   console.log(params)
   const data = await fetchBlogById(params.id);
   console.log(data)
+  const htmlContent = marked(data.attributes.blogDesc.slice(0,100));
   // const [blog, setBlog] = useState(null);
   // const [loading, setLoading] = useState(true);
   // const [error, setError] = useState(null);
@@ -81,7 +83,12 @@ async function Page({params}) {
 
               alt="" />
           <h1>{data.attributes.blogTitle}</h1>
-          <p>{data.attributes.blogDesc}</p>
+          <div
+                    dangerouslySetInnerHTML={{
+                      __html: htmlContent,
+                    }}
+                  />
+          
         </article>
 
         {/* ======== aside section for best blogs and social media links ====== */}
