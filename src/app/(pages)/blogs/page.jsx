@@ -124,13 +124,14 @@ async function page() {
               <article className="card-blog" key={blog.id}>
                 <div className="card-header">
                 {/* <img src={`https://strapi-blog-demo-yuir.onrender.com${blog.attributes.ezzghari.data[0].attributes.url}`}  alt="" /> */}
-                <Image
-             src={`${blog.attributes.blogImg.data[0].attributes.url}`}
-              width={500}
-         height={500}
-        alt="Picture of the author"
-       />
-    
+                                  <Image
+                    src={blog.attributes.blogImg.data[0].attributes.formats.small.url}
+                    width={500}
+                    height={301}  // Use the corresponding height from the `small` format
+                    quality={10}
+                    loading="lazy"
+                    alt="Picture of the author"
+                  />
                 </div>
                 <div className="card-content">
                   <h3>{blog.attributes.blogTitle}</h3>

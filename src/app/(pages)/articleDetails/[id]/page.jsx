@@ -25,7 +25,7 @@ async function Page({params}) {
   console.log(params)
   const data = await fetchBlogById(params.id);
   console.log(data)
-  const htmlContent = marked(data.attributes.blogDesc.slice(0,100));
+  const htmlContent = marked(data.attributes.blogDesc);
   // const [blog, setBlog] = useState(null);
   // const [loading, setLoading] = useState(true);
   // const [error, setError] = useState(null);
@@ -75,13 +75,14 @@ async function Page({params}) {
 
           <div className="line"> </div>
 
-          <Image 
-             src={`${data.attributes.blogImg.data[0].attributes.url}`}
-             quality={30}
-             width={300}
-             height={200}
-
-              alt="" />
+                          <Image
+                  src={data.attributes.blogImg.data[0].attributes.formats.small.url}
+                  width={500}
+                  height={301}  // Use the corresponding height from the `small` format
+                  quality={10}
+                  loading="lazy"
+                  alt="Picture of the author"
+                />
           <h1>{data.attributes.blogTitle}</h1>
           <div
                     dangerouslySetInnerHTML={{
@@ -116,7 +117,7 @@ async function Page({params}) {
               <div className="line"></div>
               <div className="card-footer ">
                 <div className="seen"> <FontAwesomeIcon width={"15"} icon={faEye} /> <span>10k</span> views</div>
-                <a href="/articleDetails/3">Read more</a>
+                <a href="/articleDetails/2">Read more</a>
               </div>
             </div>
             {/* Add more blog cards as needed */}
