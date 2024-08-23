@@ -69,12 +69,12 @@ section .title h2{
   margin: auto;
 }
 
-.game-catigories .platforms{
+.game-catigories .games-platform{
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.game-catigories .platforms .platform{
+.game-catigories  .games-platform  .game-platform{
   width: 80px;
   height: 80px;
   border-radius: 6px;
@@ -83,7 +83,7 @@ section .title h2{
   justify-content: center;
   align-items: center;
 }
-.game-catigories .platforms .platform:hover{
+.game-catigories  .games-platform  .game-platform:hover{
   transition: .4s linear all;
   background-image: linear-gradient(to right ,rgb(53, 77, 82),rgb(46, 100, 111));
   border: 1px solid rgb(129, 129, 129);
@@ -210,10 +210,10 @@ section .title h2{
     width: 100%;
     text-align: center;
   }
-  .game-catigories .platforms{
+  .game-catigories .games-platform{
     gap: 8px;
   }
-  .game-catigories .platforms .platform{
+  .game-catigories  .games-platform  .game-platform{
     width: 60px;
     height: 60px;
   }

@@ -1,44 +1,39 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./blogs.css";
-import { marked } from "marked";
-import Image from "next/image";
+
 import {
-  faArrowRight,
+
   faBarsStaggered,
   faChevronRight,
-  faCoins,
-  faComment,
   faDollarSign,
   faMagnifyingGlass,
   faNewspaper,
   faPlay,
-  faPlus,
-  faShareFromSquare,
-  faThumbsUp,
+  faPlus,  
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
-import moment from 'moment';
+
+import CardBlog from "./CardBlog";
 
 // Function to fetch data from Strapi
-async function fetchBlogs() {
-  const res = await fetch('https://strapi-blog-demo-yuir.onrender.com/api/blogs?populate=*', {
-    next: { revalidate: 60 }, // Optional: Revalidate data every 60 seconds
-  });
-  if (!res.ok) {
-    throw new Error('Failed to fetch blogs');
-  }
-  return res.json();
-}
+// async function fetchBlogs() {
+//   const res = await fetch('https://strapi-blog-demo-yuir.onrender.com/api/blogs?populate=*', {
+  //     next: { revalidate: 60 }, // Optional: Revalidate data every 60 seconds
+//   });
+//   if (!res.ok) {
+//     throw new Error('Failed to fetch blogs');
+//   }
+//   return res.json();
+// }
 
 async function page() {
-  const data = await fetchBlogs();
+  // const data = await fetchBlogs();
 
 
-  data.data.map((blog) => {
-    console.log(blog.attributes.blogImg.data[0].attributes.url)
-  }
-  )
+  // data.data.map((blog) => {
+  //   console.log(blog.attributes.blogImg.data[0].attributes.url)
+  // }
+  // )
 
 
   return (
@@ -114,62 +109,10 @@ async function page() {
         <div className="title">
           <h2>Explore our blogs & articles</h2>
         </div>
-        <div className="cards">
-          {data.data.map((blog) => {
-            
-            // Ensure the blog description is properly converted to HTML
-            const htmlContent = marked(blog.attributes.blogDesc.slice(0,100));
-
-            return (
-              <article className="card-blog" key={blog.id}>
-                <div className="card-header">
-                {/* <img src={`https://strapi-blog-demo-yuir.onrender.com${blog.attributes.ezzghari.data[0].attributes.url}`}  alt="" /> */}
-                                  <Image
-                    src={blog.attributes.blogImg.data[0].attributes.formats.small.url}
-                    width={500}
-                    height={301}  // Use the corresponding height from the `small` format
-                    quality={10}
-                    loading="lazy"
-                    alt="Picture of the author"
-                  />
-                </div>
-                <div className="card-content">
-                  <h3>{blog.attributes.blogTitle}</h3>
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: htmlContent,
-                    }}
-                  />
-                  <span>{moment(blog.attributes.publishedAt).format('MMMM Do, YYYY')}</span>
-                </div>
-                <div className="card-footer">
-                  <div className="part-1">
-                    <Link href={`articleDetails/${blog.id}`}>
-                      <span>read article </span>
-                      <FontAwesomeIcon width={"15"} icon={faArrowRight} />
-                    </Link>
-                  </div>
-                  <div className="part-2 flex gap-3">
-                    <button>
-                      <span>{blog.attributes.comments}</span>
-                      <FontAwesomeIcon width={"15"} icon={faComment} />
-                    </button>
-                    <button>
-                      <span>{blog.attributes.likes}</span>
-                      <FontAwesomeIcon width={"15"} icon={faThumbsUp} />
-                    </button>
-                    <button>
-                      <FontAwesomeIcon
-                        width={"15"}
-                        icon={faShareFromSquare}
-                      />
-                    </button>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
-        </div>
+        {/*====== import  the card component=========== */}
+             
+              <CardBlog/>
+              
         {/* load more blogs */}
         <a href="" className="more-blogs-btn">
           <span>load more blogs</span>

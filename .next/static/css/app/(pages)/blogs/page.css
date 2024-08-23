@@ -286,3 +286,30 @@ color: rgb(255, 128, 0) ;
     width: 10px;
   }
 }
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/component/loading/loading.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.spiner-comp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid orange;
+  border-top: 3px solid transparent;
+  animation: spiner 1s infinite linear;
+}
+
+@keyframes spiner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
