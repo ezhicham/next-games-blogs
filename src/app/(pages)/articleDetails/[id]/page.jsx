@@ -116,7 +116,7 @@ async function Page({params}) {
               <div className="line"></div>
               <div className="card-footer ">
                 <div className="seen"> <FontAwesomeIcon width={"15"} icon={faEye} /> <span>10k</span> views</div>
-                <a href="">Read more</a>
+                <a href="/articleDetails/3">Read more</a>
               </div>
             </div>
             {/* Add more blog cards as needed */}
