@@ -1,0 +1,30 @@
+.trend-section{
+  margin: auto;
+  margin-top: 50px;
+  width:100%;
+ border: #0d111384;
+}
+section .title h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(255, 128, 0) ;
+}
+table {
+  width: 50%;
+  font-size: 12px;
+}
+tbody  .game-name{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+table td {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+table td img{
+  border-radius: 50%;
+}
