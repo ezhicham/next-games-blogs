@@ -73,7 +73,7 @@ async function Page({params}) {
             </div>
           </div>
 
-          <div className="line"></div>
+          <div className="line"> </div>
 
           <Image 
              src={`${data.attributes.blogImg.data[0].attributes.url}`}
