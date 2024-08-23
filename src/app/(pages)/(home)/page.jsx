@@ -106,11 +106,11 @@ Plus, snag exclusive coupons and discounts for games, coins, and accounts from r
               <div className="part-1">
                 <Link href={`articleDetails/${blog.id}`} ><span>read more </span> <FontAwesomeIcon width={"15"} icon={faArrowRight} /></Link>
               </div>
-              <div className="part-2 flex gap-3">
+              {/* <div className="part-2 flex gap-3">
               <FontAwesomeIcon width={"15"} icon={faComment} />
               <FontAwesomeIcon width={"15"} icon={faThumbsUp} />
               <FontAwesomeIcon width={"15"} icon={faShareFromSquare} />
-              </div>
+              </div> */}
             </div>
           </article>
     
@@ -128,7 +128,7 @@ Plus, snag exclusive coupons and discounts for games, coins, and accounts from r
 
        </div>
        {/* load more blogs */}
-       <a href="" className="more-blogs-btn"><span>load more blogs</span> <FontAwesomeIcon width={"15"} icon={faPlus} /></a>
+       <Link href="/blogs" className="more-blogs-btn"><span>load more blogs</span> <FontAwesomeIcon width={"15"} icon={faPlus} /></Link>
     </section>
       
 

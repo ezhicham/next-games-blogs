@@ -111,8 +111,53 @@ async function Page({params}) {
             {/* Sample blog card (you can dynamically generate these from fetched data if needed) */}
             <div className="card">
               <div className="card-body">
-                <h3>What is the best VPNs?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3>How can gamers improve their streaming setup?</h3>
+                <p> to improve streaming setup you should Invest in a good microphone, camera, and lighting....</p>
+              </div>
+              <div className="line"></div>
+              <div className="card-footer ">
+                <div className="seen"> <FontAwesomeIcon width={"15"} icon={faEye} /> <span>10k</span> views</div>
+                <a href="/articleDetails/2">Read more</a>
+              </div>
+            </div>
+              {/* Sample blog card (you can dynamically generate these from fetched data if needed) */}
+              <div className="card">
+              <div className="card-body">
+                <h3>What are the top gaming accessories to buy?</h3>
+                <p>the top accessories gaming to buy is Headsets, gaming mice, mechanical keyboards...</p>
+              </div>
+              <div className="line"></div>
+              <div className="card-footer ">
+                <div className="seen"> <FontAwesomeIcon width={"15"} icon={faEye} /> <span>10k</span> views</div>
+                <a href="/articleDetails/2">Read more</a>
+              </div>
+            </div>  {/* Sample blog card (you can dynamically generate these from fetched data if needed) */}
+            <div className="card">
+              <div className="card-body">
+                <h3>How can you make money from gaming content on YouTube?</h3>
+                <p>we will teach you how you can earn money from gaming on youtube by a few and easy steps ...</p>
+              </div>
+              <div className="line"></div>
+              <div className="card-footer ">
+                <div className="seen"> <FontAwesomeIcon width={"15"} icon={faEye} /> <span>10k</span> views</div>
+                <a href="/articleDetails/2">Read more</a>
+              </div>
+            </div>  {/* Sample blog card (you can dynamically generate these from fetched data if needed) */}
+            <div className="card">
+              <div className="card-body">
+                <h3>What are the best new games to play in 2025?</h3>
+                <p> Tears of the Kingdom, Elden Ring, Starfield, Hogwarts Legacy, Cyberpunk 2077...</p>
+              </div>
+              <div className="line"></div>
+              <div className="card-footer ">
+                <div className="seen"> <FontAwesomeIcon width={"15"} icon={faEye} /> <span>10k</span> views</div>
+                <a href="/articleDetails/2">Read more</a>
+              </div>
+            </div>  {/* Sample blog card (you can dynamically generate these from fetched data if needed) */}
+            <div className="card">
+              <div className="card-body">
+                <h3>What are the most useful mods for fortnite?</h3>
+                <p>A useful mod in Fortnite is Fortnite Tracker, which helps track player stats and game performance....</p>
               </div>
               <div className="line"></div>
               <div className="card-footer ">

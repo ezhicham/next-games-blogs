@@ -18,7 +18,7 @@ import {
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-
+import moment from 'moment';
 
 // Function to fetch data from Strapi
 async function fetchBlogs() {
@@ -140,7 +140,7 @@ async function page() {
                       __html: htmlContent,
                     }}
                   />
-                  <span>11/09/2024</span>
+                  <span>{moment(blog.attributes.publishedAt).format('MMMM Do, YYYY')}</span>
                 </div>
                 <div className="card-footer">
                   <div className="part-1">
@@ -151,11 +151,11 @@ async function page() {
                   </div>
                   <div className="part-2 flex gap-3">
                     <button>
-                      <span>500</span>
+                      <span>{blog.attributes.comments}</span>
                       <FontAwesomeIcon width={"15"} icon={faComment} />
                     </button>
                     <button>
-                      <span>1.3k</span>
+                      <span>{blog.attributes.likes}</span>
                       <FontAwesomeIcon width={"15"} icon={faThumbsUp} />
                     </button>
                     <button>

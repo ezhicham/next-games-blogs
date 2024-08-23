@@ -7,7 +7,7 @@ import Link from 'next/link'
 function Navbar() {
   return (
     <nav>
-      {/* <img className='nav-brand' src="../images/723d0af616b1fe7d5c7e56a3532be3cd-removebg-preview (1).png"  alt="" /> */}
+      <img className='nav-brand' src="../images/723d0af616b1fe7d5c7e56a3532be3cd-removebg-preview (1).png"  alt="" />
       <div className="nav-links">
         <ul className="menu-links">
           <li><Link href="/">home</Link></li>
