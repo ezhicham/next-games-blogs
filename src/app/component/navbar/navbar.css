@@ -187,22 +187,22 @@ color: rgb(255, 128, 0) ;
 
   }
 
-  nav .nav-links {
+  /* nav .nav-links {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 
-  nav .nav-links {
+  /* nav .nav-links {
     height: 0;
     opacity: 0;
-  }
-  nav .nav-links .menu-links {
+  } */
+  /* nav .nav-links .menu-links {
     flex-direction: column;
     gap: 15px;
-  }
+  } */
 
   nav .nav-links .menu-links li a {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
@@ -222,7 +222,10 @@ color: rgb(255, 128, 0) ;
   }
 
   nav .nav-links .menu-links li a {
-    font-size: 12px;
+    font-size: 8px;
+  }
+  .switch {
+    display: none;
   }
 }
 

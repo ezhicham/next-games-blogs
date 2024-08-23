@@ -23,8 +23,8 @@ body {
 
 @media (max-width: 991.98px){
   .container{
-    /* width: 95vw; */
-    padding: 0;
+    width: 100vw;
+    padding: 5px;
   }
 }
 /* @media (max-width: 600px){
