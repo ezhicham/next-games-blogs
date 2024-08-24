@@ -220,6 +220,9 @@ section .title h2{
     width: 100%;
     text-align: center;
   }
+  .hero-section .image-intro{
+    width: 100%;
+  }
   .game-catigories .games-platform{
     gap: 8px;
   }
