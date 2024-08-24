@@ -63,11 +63,11 @@ Dive into our blogs for updates on the hottest game trends—whether it's action
 Plus, snag exclusive coupons and discounts for games, coins, and accounts from reputable sources. 🏷️💸 Get the best deals and enjoy your favorites for less! 🎉🎁 </p>
       </div>
     <div className="games-platform"> 
-       <div className="game-platform"><FontAwesomeIcon width={"30"} icon={faXbox} /></div>
-      <div className="game-platform"><FontAwesomeIcon width={"30"}  icon={faPlaystation} /></div>
-      <div className="game-platform"><FontAwesomeIcon width={"30"}  icon={faGamepad} /></div>
-      <div className="game-platform"><FontAwesomeIcon width={"30"} icon={faDesktop} /></div>
-      <div className="game-platform">  <FontAwesomeIcon width={"30"} icon={faAndroid} /></div>
+       <div className="game-platform"><FontAwesomeIcon icon={faXbox} /></div>
+      <div className="game-platform"><FontAwesomeIcon   icon={faPlaystation} /></div>
+      <div className="game-platform"><FontAwesomeIcon   icon={faGamepad} /></div>
+      <div className="game-platform"><FontAwesomeIcon  icon={faDesktop} /></div>
+      <div className="game-platform">  <FontAwesomeIcon icon={faAndroid} /></div>
     
       </div>
 

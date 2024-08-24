@@ -82,14 +82,14 @@ function CardBlog() {
                 <div className="part-2 flex gap-3">
                   <button>
                     <span>{blog.attributes.comments}</span>
-                    <FontAwesomeIcon width={"15"} icon={faComment} />
+                    <FontAwesomeIcon  icon={faComment} />
                   </button>
                   <button>
                     <span>{blog.attributes.likes}</span>
-                    <FontAwesomeIcon width={"15"} icon={faThumbsUp} />
+                    <FontAwesomeIcon icon={faThumbsUp} />
                   </button>
                   <button>
-                    <FontAwesomeIcon width={"15"} icon={faShareFromSquare} />
+                    <FontAwesomeIcon  icon={faShareFromSquare} />
                   </button>
                 </div>
               </div>

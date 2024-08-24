@@ -153,6 +153,12 @@ color: rgb(255, 128, 0) ;
   transform: translateX(30px);
 }
 
+
+
+/* menu bar just for mobile devices */
+.menu-bar{
+display: none;
+}
 /* Medium devices ( 991px) */
 @media (max-width: 991.98px) {
   nav {
@@ -168,10 +174,7 @@ color: rgb(255, 128, 0) ;
   nav .nav-links .menu-links li a {
     font-size: 14px;
   }
-  .blogs .cards .card{
-    width: 40%;
-    background-color: blue;
-  }
+  
 }
 
 /* Small devices (landscape phones, 576px to 767px) */
@@ -180,29 +183,53 @@ color: rgb(255, 128, 0) ;
     
     padding: 10px 15px;
     min-height: 70px;
+    width: 90vw;
+    display: block;
     
   }
-  nav .nav-brand{
-    width: 70px;
 
-  }
-
-  /* nav .nav-links {
-    flex-direction: column;
-    gap: 20px;
-  } */
-
-  /* nav .nav-links {
+  nav .nav-links {
+    position: absolute;
+    width: 200px;
     height: 0;
-    opacity: 0;
-  } */
-  /* nav .nav-links .menu-links {
+    right: 20px;
+    top: 80px;
+    border-radius: 20px;
+    padding: 0;
+    overflow: hidden;
     flex-direction: column;
-    gap: 15px;
-  } */
+    justify-content: flex-start;
+    gap: 20px;
+    background-image: linear-gradient(to right ,rgba(8, 29, 45, 0.763), rgb(15, 41, 60));
+    z-index: 100;
+    color: white;
+    transition: .4s linear all;
+  }
+  nav .nav-links.active{
+    height: fit-content;
+    padding: 10px;
+  }
+  nav .nav-links .menu-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
 
   nav .nav-links .menu-links li a {
     font-size: 10px;
+  }
+  .switch{display: none;}
+  .menu-bar{
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    
+  }
+  .menu-bar{
+    display: block;
+  }
+  .menu-bar svg{
+    font-size: 25px;
   }
 }
 
@@ -210,7 +237,7 @@ color: rgb(255, 128, 0) ;
 @media (max-width: 575.98px) {
   nav {
     padding: 5px 10px;
-    width: 100vw;
+    width: 90vw;
   }
 
   nav .nav-links {
@@ -222,7 +249,7 @@ color: rgb(255, 128, 0) ;
   }
 
   nav .nav-links .menu-links li a {
-    font-size: 8px;
+    font-size: 10px;
   }
   .switch {
     display: none;

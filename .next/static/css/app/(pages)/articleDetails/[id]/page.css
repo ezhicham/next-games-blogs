@@ -1,0 +1,228 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/(pages)/articleDetails/blogpost.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.blog-page{
+  margin-top: 50px;
+  
+}
+
+.content-blogs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-page .blog-card{
+  width: 70%;
+}
+.blog-page .blog-card .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.blog-page .blog-card .header span{
+  color: orangered;
+  background-color: rgb(255, 207, 188);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.blog-page .blog-card .header .blog-action{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.blog-page .blog-card .header .blog-action button{
+  display: flex; 
+  gap: 3px;
+  font-size: 12px;
+}
+.blog-page .blog-card .header .blog-action svg{
+  font-size: 14px;
+}
+.blog-page .blog-card .header .blog-action  button:hover{
+  transition: .4s linear all;
+  cursor: pointer;
+   color: orangered;
+}
+ .line{
+  width: 100%;
+  height: 1px ;
+  background-color: rgb(165, 165, 165);
+}
+.blog-page .blog-card img{
+  width: 500px;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.blog-page .blog-card h1{
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+.blog-page .blog-card p a{
+  color: orangered;
+}
+.blog-page .blog-card p{
+  color: rgb(214, 214, 214);
+}
+.blog-page .aside-section{
+width: 25%;
+
+
+border-radius: 6px;
+}
+
+.blog-page .aside-section .card-media{
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: rgba(104, 104, 104, 0.476) 0px 4px 12px;
+  background-image: linear-gradient(to right , orangered ,rgb(254, 18, 61));
+  text-align: center;
+}
+.blog-page .aside-section .card-media h4{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.blog-page .aside-section .card-media .social-media{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 10px;
+}
+.blog-page .aside-section .card-media .social-media a:hover{
+  transform: scale(1.2);
+  transition: .4s ease-in-out all;
+}
+
+.blog-page  .aside-section  .important-blogs-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.blog-page  .aside-section  .important-blogs-cards .title {
+ color: orangered;
+ text-align: center;
+ text-transform: uppercase;
+ font-weight: bold;
+   
+}
+
+.blog-page  .aside-section  .important-blogs-cards .card{
+  width: 100%;
+  padding: 10px;
+  /* box-shadow: rgba(198, 198, 198, 0.2) 0px 7px 29px 0px; */
+  /* border: 1px solid ; */
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.039);
+}
+ .important-blogs-cards .card  .card-body h3{
+  color: rgb(173, 130, 238);
+  font-size: 14px;
+  text-transform: capitalize;
+ }
+ .important-blogs-cards .card  .card-body p{
+  font-size: 10px;
+  margin-bottom: 10px;
+ }
+
+ .important-blogs-cards .card .card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+ .important-blogs-cards .card .card-footer .seen{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  color: gray;
+  font-weight: bold;
+ }
+ .important-blogs-cards .card .card-footer .seen svg{
+  color: orangered;
+ }
+ .important-blogs-cards .card .card-footer a{
+  font-size: 14px;
+  text-transform: capitalize;
+  color: orangered;
+  text-decoration: underline;
+ }
+
+ .loading {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid orange;
+  border-top: 3px solid transparent;
+  animation: spiner 1s infinite linear;
+}
+
+@keyframes spiner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+/* ============= media query =============  */
+/* Medium devices ( 991px) */
+@media (max-width: 991.98px){
+  .blog-page .blog-card{
+    width: 68%;
+  }
+  .blog-page .aside-section{
+   width: 30%;
+  }
+}
+@media (max-width: 768px){
+  .blog-page .blog-card{
+    width: 100%;
+  }
+  .blog-page .aside-section{
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+   }
+}
+@media (max-width: 600px){
+
+}
+@media (max-width: 598px){
+
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/component/loading/loading.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.spiner-comp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid orange;
+  border-top: 3px solid transparent;
+  animation: spiner 1s infinite linear;
+}
+
+@keyframes spiner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
