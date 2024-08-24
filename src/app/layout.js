@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Navbar from "./component/navbar/Navbar";
 import Footer from "./component/footer/Footer";
+import Analytics from "./component/analytics/Analitics.js";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Analytics/>
       <body className={montserrat.className}>
         <div className="container">
         <Navbar/>
