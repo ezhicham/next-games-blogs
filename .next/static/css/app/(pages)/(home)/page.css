@@ -74,11 +74,15 @@ color: ;
 }
 
 .hero-section .image-intro{
-  width: 200px;
+  width: 400px;
   height: 200px;
-  border-radius: 50%;
-  background-color: rgb(255, 149, 0);
-  
+  border-radius: 12px;
+  background-image: url("https://i.pinimg.com/564x/de/5d/fe/de5dfec30de99b878bc262f29d277085.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  box-shadow: inset 20px 20px 60px #e37a02,
+            inset -20px -20px 60px #ff9002;
 }
 .game-catigories {
   margin-top: 50px;

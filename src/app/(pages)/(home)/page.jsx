@@ -44,7 +44,7 @@ export default async function Home() {
         </div>
         {/* image intro */}
         <div className="image-intro">
-          get best offers from here in the best shop ever 
+          
         </div>
 
        </section>

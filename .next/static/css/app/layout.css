@@ -333,6 +333,9 @@ color: rgb(255, 128, 0) ;
 .menu-bar{
 display: none;
 }
+.close-btn{
+  display: none;
+}
 /* Medium devices ( 991px) */
 @media (max-width: 991.98px) {
   nav {
@@ -395,13 +398,18 @@ display: none;
   .switch{display: none;}
   .menu-bar{
     position: absolute;
-    right: 40px;
-    top: 35px;
+    right: 45px;
+    top: 30px;
     display: block;
-    
   }
+  /* .menu-bar{
+    display: block;
+  } */
   .menu-bar svg{
     font-size: 25px;
+  }
+  .close-btn{
+    display: block;
   }
 }
 
